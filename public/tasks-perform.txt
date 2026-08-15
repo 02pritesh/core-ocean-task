@@ -1,0 +1,13 @@
+1.  Setup Dashboard ------------------------------------------------------> Done
+2.  CRUD Operations
+3.  Authentication & Authorization
+4.  Send Email When user will add.
+5.  Send Email Notification When user will add.
+6.  Send Email When user information shall update.
+7.  Apply Pagination using paginate method.
+8.  Multi-Delete Functionality.
+9.  Add User records in bulk forms.
+10. Get User details with the help of token.
+11. Add User details with the help of token.
+12. Role and Permissions
+13. Deploy Project

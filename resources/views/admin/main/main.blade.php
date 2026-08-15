@@ -27,6 +27,11 @@
         @include('admin.layouts.footer')
     </main>
 
+    {{-- Kept outside .nxl-container: the theme blurs .nxl-container while a
+         modal is open (body.modal-open .nxl-container { filter: blur(3px) }),
+         so modals must live here to stay sharp themselves. --}}
+    @stack('modals')
+
     <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1080">
         <div id="app-toast" class="toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
             <div class="d-flex">

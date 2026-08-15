@@ -75,7 +75,12 @@
             </div>
         </div>
     </div>
+@endsection
 
+{{-- Rendered outside .nxl-container (see main.blade.php) so the theme's
+     "body.modal-open .nxl-container { filter: blur(3px) }" rule - meant to
+     blur the page behind a modal - doesn't also blur the modal itself. --}}
+@push('modals')
     <div class="modal fade" id="video-view-modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -99,7 +104,7 @@
             </div>
         </div>
     </div>
-@endsection
+@endpush
 
 @push('styles')
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/css/dataTables.bs5.min.css') }}" />
@@ -108,6 +113,5 @@
 @push('scripts')
     <script src="{{ asset('assets/vendors/js/dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/js/dataTables.bs5.min.js') }}"></script>
-    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="{{ asset('assets/js/custom/video-index.js') }}"></script>
 @endpush

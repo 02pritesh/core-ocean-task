@@ -1,0 +1,9 @@
+/**
+ * theme.min.css has ".table-responsive .table tbody tr:last-child *" which
+ * strips the bottom border off every descendant of the last table row
+ * (meant for <td>/<th>, but it also catches buttons/links placed in cells).
+ * Restore it for buttons so action buttons in the last row don't look clipped.
+ */
+.table-responsive .table tbody tr:last-child .btn {
+    border-bottom: var(--bs-btn-border-width, 1px) solid var(--bs-btn-border-color) !important;
+}

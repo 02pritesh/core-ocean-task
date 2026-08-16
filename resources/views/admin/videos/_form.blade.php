@@ -83,12 +83,12 @@
                 <div class="ratio ratio-16x9" id="video-preview-wrapper">
                     @if ($isEdit)
                         <iframe id="video-preview" src="{{ \App\Support\Vimeo::embedUrl($video->video_link) }}"
-                            allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
                     @else
                         <div class="d-flex align-items-center justify-content-center bg-light text-muted" id="video-preview-empty">
                             Paste a Vimeo link to preview
                         </div>
-                        <iframe id="video-preview" class="d-none" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe id="video-preview" class="d-none" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
                     @endif
                 </div>
             </div>

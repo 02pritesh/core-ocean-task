@@ -90,7 +90,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="ratio ratio-16x9">
-                        <iframe id="video-view-modal-iframe" src="" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe id="video-view-modal-iframe" src="" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>
                     </div>
                 </div>
                 <div class="modal-footer">
